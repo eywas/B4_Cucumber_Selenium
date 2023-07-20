@@ -15,25 +15,24 @@ public class Hooks {
     public void setUp(){
         Driver.get().manage().window().maximize();
         Driver.get().manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-
     }
+
     @After(order = 0)
     public void tearDown(Scenario scenario){
-        System.out.println("This is coming from after method");
-        if (scenario.isFailed()){
+        if(scenario.isFailed()){
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot,"image/png","screenshot");
         }
-        Driver.closeDriver();
+       Driver.closeDriver();
     }
 
     @Before(value = "@dataBase", order = 1)
     public void openDataBase(){
         System.out.println("Open database");
     }
+
     @After(value = "@dataBase", order = 1)
     public void closeDataBase(){
         System.out.println("Close database");
     }
-
 }
