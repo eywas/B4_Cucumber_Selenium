@@ -34,6 +34,6 @@ public class UserProfile_StepDefs {
     }
     @When("The user clicks on save changes button")
     public void the_user_clicks_on_save_changes_button() {
-        editProfilePage.saveChangeBtn.click();
+        BrowserUtils.clickWithJS(editProfilePage.saveChangeBtn);
     }
 }

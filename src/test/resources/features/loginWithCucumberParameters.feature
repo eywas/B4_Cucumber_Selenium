@@ -1,3 +1,4 @@
+@regression
 Feature: Login tests with cucumber parameters
 
   #mike
@@ -27,7 +28,7 @@ Feature: Login tests with cucumber parameters
     Then Validate that username is "Eddie Murphy"
 
   @c_ScenarioOutline
-  Scenario Outline: Different name user type
+  Scenario Outline: Different "<name>" user type
     Given The user is on the login page
     When The user logs in using "<userEmail>" and "<password>"
     Then Validate that username is "<name>"
