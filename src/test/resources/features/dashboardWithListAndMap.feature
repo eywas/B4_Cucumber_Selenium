@@ -49,7 +49,7 @@ Feature: Dashboard Menu Checks
       | Edit Profile     |
       | Add Experience   |
       | Add Education    |
-      | Change Passwords |
+      | Change Password  |
 
     # Class Task f2 HW
     # go to web page -> https://demoqa.com/
