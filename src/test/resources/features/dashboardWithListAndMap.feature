@@ -45,11 +45,11 @@ Feature: Dashboard Menu Checks
     When The user logs in using "john@gmail.com" and "John1234."
     And The user navigates to "John" and "My Profile" sub menu
     Then The user should be able to see following subMenu
-      | Overview         |
-      | Edit Profile     |
-      | Add Experience   |
-      | Add Education    |
-      | Change Passwords |
+      | Overview        |
+      | Edit Profile    |
+      | Add Experience  |
+      | Add Education   |
+      | Change Password |
 
     # Class Task f2 HW
     # go to web page -> https://demoqa.com/
