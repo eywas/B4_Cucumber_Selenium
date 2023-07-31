@@ -7,7 +7,6 @@ Feature: Components Title Checks
     When The user enters developer credentials
     And The user navigates to "<tab>" and "<module>" sub menu
     Then Validate that "<title1>" and "<title2>" and "<title3>"
-
     Examples:
       | tab        | module       | title1 | title2     | title3    |
       | Components | Alerts       | Home   | Components | Alerts    |

@@ -26,7 +26,6 @@ Feature: Login tests with cucumber parameters
     When The user logs in using "eddiem@kraft.com" and "eddiem12"
     Then The user should be able to login
     Then Validate that username is "Eddie Murphy"
-
   @c_ScenarioOutline
   Scenario Outline: Different "<name>" user type
     Given The user is on the login page
@@ -35,5 +34,7 @@ Feature: Login tests with cucumber parameters
     Examples:
       | userEmail        | password  | name         |
       | mike@gmail.com   | mike1234  | mike         |
-      | john@gmail.com   | John1234. | John         |
+      | john@gmail.co   | John1234. | John         |
       | eddiem@kraft.com | eddiem12  | Eddie Murphy |
+
+
