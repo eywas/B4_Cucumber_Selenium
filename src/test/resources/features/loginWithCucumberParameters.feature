@@ -2,7 +2,7 @@
 Feature: Login tests with cucumber parameters
 
   #mike
-  @mikeParameter @parameterizeMethods
+  @mikeParameter @parameterizeMethods @grid
   Scenario: Login with Mike - Cucumber Parameters
     Given The user is on the login page
     When The user logs in using "mike@gmail.com" and "mike1234"
@@ -11,7 +11,7 @@ Feature: Login tests with cucumber parameters
 
 
   #John
-  @johnParameter @parameterizeMethods
+  @johnParameter @parameterizeMethods @grid
   Scenario: Login with John - Cucumber Parameters
     Given The user is on the login page
     When The user logs in using "john@gmail.com" and "John1234."
