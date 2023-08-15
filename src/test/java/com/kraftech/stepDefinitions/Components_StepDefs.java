@@ -6,6 +6,7 @@ import org.junit.Assert;
 
 public class Components_StepDefs {
 
+
     ComponentsPage componentsPage = new ComponentsPage();
 
     @Then("Validate that {string} and {string} and {string}")
